@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Картинки</title>
+    <script type="text/javaScript">
+        //1. Декларирам функция
+        
+       var cssStyle = '<link rel = "stylesheet" href = "style.css">'
+       function showImage(image, style){
+            document.write(''+image+''+style+'');
+        }
+       //2. Извиквам функцията
+        showImage('<img src="images/pic1.jpg">', cssStyle );
+        showImage('<img class = image src="images/pic2.jpg"', cssStyle);
+        showImage('<img src="images/pic2.jpg"', cssStyle);
+        showImage('<img class=image2 src="images/pic3.jpg"', cssStyle);
+       
+       
+    </script>
+</head>
+<body>
+     <!--<img src="images/pic1.jpg" alt="sea">
+     <img src="images/pic2.jpg">
+  <!--
+   <p> 
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus aliquid, consectetur voluptas consequatur, laborum iste quo fugit quos dolorum modi quae ducimus. Aspernatur inventore praesentium nisi, quibusdam fugiat quis soluta.
+   </p>
+   -->
+   <noscript>
+       Моля, разрешете изпълнението на JS за пълно показване на картинките!
+   </noscript>
+    
+</body>
+</html>

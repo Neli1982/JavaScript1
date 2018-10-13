@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hw2</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script type="text/javaScript">
+        //1. Декларирам променлива
+        var countryID = '';
+        //2. Питаме за името на картинката
+        countryID = window.prompt('Въведете кода на Вашата държава!');
+        //2.1 Проверяваме какво е въвел посетителя
+        if(countryID === 'BG'){
+            document.write ('<h1>Добър ден!</h1>')
+        }
+        else if(countryID === 'UK'){
+            document.write('<h2>Good аfternoon!</h2>')
+        }
+        else if(countryID === 'FR'){
+            document.write('<h3>Bonne journee!</h3>')
+        }
+        else if(countryID === 'DE'){
+            document.write('<h3>Guten tag!</h3>')
+        }
+        else {
+            document.write('<img src=wave.png>') 
+        }
+       ;
+                        
+    </script>
+    
+  
+</head>
+<body>
+    
+  <!--
+   <p> 
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus aliquid, consectetur voluptas consequatur, laborum iste quo fugit quos dolorum modi quae ducimus. Aspernatur inventore praesentium nisi, quibusdam fugiat quis soluta.
+   </p>
+   -->
+   <noscript>
+       Моля, разрешете изпълнението на JS за пълно показване на картинките!
+   </noscript>
+    
+</body>
+</html>

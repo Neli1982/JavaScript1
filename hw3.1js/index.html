@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Галерия</title>
+    <style>
+        #gallery {
+            list-style: none;
+        }
+        li+li{
+            display: none;
+        }
+        img {
+            border: 3px solid red;
+            resize: horizontal;
+        }
+        #prev {
+            margin-left: 20%;
+        }
+        
+    </style>
+</head>
+<body>
+     <ul id=gallery>
+         <li><img src="images/pic1.jpg">
+         </li>
+         <li><img src="images/pic2.jpg">
+         </li>
+         <li><img src="images/pic3.jpg">
+         </li>
+    </ul> 
+    <div>    
+    <input type="button" id="prev" value="<<">
+    <input type="button" id="nxt" value=">>">
+    </div>
+   
+   <noscript>
+       Моля, разрешете изпълнението на JS за пълно показване на картинките!
+   </noscript>
+   
+   <!--Не блокиращо свързване-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#nxt').click(function(){
+                $('#gallery li:first-child').appendTo($('#gallery'));
+            });//on btn #nxt click
+            $('#prev').click(function(){
+                $('#gallery li:last-child').prependTo($('#gallery'));
+            });//on btn #prev click
+        })//on document ready
+      
+    </script>
+    
+</body>
+</html>
